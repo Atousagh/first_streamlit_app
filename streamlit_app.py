@@ -78,11 +78,3 @@ if streamlit.button ('Add a fruit to the list'):
   streamlit.text(back_from_function)
 
 
-
-
-# Do not run annything past here while we troubleshoot.
-streamlit.stop()
-
-# This will not work correctly now. Adde a value to the table
-
-#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
