@@ -40,7 +40,7 @@ fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 # Do not run annything past here while we troubleshoot.
-streamlit.stop()
+#streamlit.stop()
 
 # Query the Trial Account Metadata 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
@@ -55,4 +55,4 @@ add_my_fruit =streamlit.text_input('What fruit would you like to add?', 'jackfru
 streamlit.write('Thanks for adding', add_my_fruit)
 
 # This will not work correctly now. Adde a value to the table
-my_cure.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cure.execute("insert into fruit_load_list values ('from streamlit')")
